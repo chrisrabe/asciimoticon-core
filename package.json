@@ -1,6 +1,6 @@
 {
   "name": "asciimoticon-core",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "an open source library which contains functions to create ascii emoticons",
   "main": "app.js",
   "scripts": {
