@@ -1,0 +1,28 @@
+{
+  "name": "asciimoticon-core",
+  "version": "0.0.0",
+  "description": "an open source library which contains functions to create ascii emoticons",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisrabe/asciimoticon-core.git"
+  },
+  "keywords": [
+    "ascii",
+    "emoticon",
+    "library",
+    "emoji",
+    "core",
+    "open",
+    "source"
+  ],
+  "author": "Chris Rabe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisrabe/asciimoticon-core/issues"
+  },
+  "homepage": "https://github.com/chrisrabe/asciimoticon-core#readme"
+}
