@@ -3,8 +3,8 @@
 const dice = ['⚀', '⚁', '⚂', '⚃', '⚄', '⚅'];
 
 var validate = (amount) => {
-    if (amount < 1) return 1;
-    if (amount > 6) return 6;
+    if (amount < 1) return null;
+    if (amount > 6) return null;
     return amount;
 }
 
@@ -14,7 +14,8 @@ var getRandomInt = (min, max) => {
 
 exports.single = (amount) => {
     const index = validate(amount);
-    return dice[index - 1];
+    const result = (index == null || index == '') ? null : dice[index - 1];
+    return result == null ? null : result;
 };
 
 exports.random = () => {

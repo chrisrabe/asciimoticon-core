@@ -1,5 +1,5 @@
 /*jshint esversion:6 */
-const service = require('../services/text.service');
+const service = require('../../services/text.service');
 
 const flipText = {
     a: '\u0250',
@@ -42,5 +42,5 @@ const flipText = {
 };
 
 exports.getAscii = (text) => {
-    return text == null ? null : service.transpose(text.toLowerCase(), flipText, true);
+    return (text == null || text == '') ? null : service.transpose(text.toLowerCase(), flipText, true);
 };

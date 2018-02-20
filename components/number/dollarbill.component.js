@@ -15,5 +15,8 @@ var table = {
 };
 
 exports.getAscii = (amount) => {
-    return amount == null ? null : '[̲̅$̲̅(̲' + service.transpose(amount, table) + '̅)̲̅$̲̅]'
+    if (isNaN(amount)) {
+        return null;
+    }
+    return (amount == null || amount == '') ? null : '[̲̅$̲̅(̲' + service.transpose(amount.toString(), table) + '̅)̲̅$̲̅]'
 };
