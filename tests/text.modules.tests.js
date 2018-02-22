@@ -69,3 +69,26 @@ describe('witchtext tests', () => {
         expect(output).to.equal(expected);
     });
 });
+
+describe('fliptexttable tests', () => {
+    it('should convert text successfully', () => {
+        const input = 'test';
+        const output = textModule.toFliptextTable(input);
+        const expected = '(ノ ゜Д゜)ノ ︵  ʇsǝʇ';
+        expect(output).to.equal(expected);
+    });
+
+    it('should return null if null is passed', () => {
+        const input = null;
+        const output = textModule.toFliptextTable(input);
+        const expected = null;
+        expect(output).to.equal(expected);
+    });
+
+    it('should return null if a blank string is passed', () => {
+        const input = '';
+        const output = textModule.toFliptextTable(input);
+        const expected = null;
+        expect(output).to.equal(expected);
+    });
+});
