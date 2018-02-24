@@ -1,3 +1,5 @@
+/*jshint esversion:6*/
+
 const expect = require('chai').expect;
 const numberModule = require('../app').number;
 
