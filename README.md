@@ -3,7 +3,7 @@
 
 **Nodejs**: https://www.npmjs.com/package/asciimoticon-core
 
-**asciimoticon-web**: [asciimoticon-web.herokuapp.com](asciimoticon-web.herokuapp.com)
+**asciimoticon-web**: [asciimoticon-web.herokuapp.com](https://asciimoticon-web.herokuapp.com)
 
 ## Nodejs Installation
 ```
