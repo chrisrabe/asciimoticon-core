@@ -3,6 +3,8 @@
 
 **Nodejs**: https://www.npmjs.com/package/asciimoticon-core
 
+**asciimoticon-web**: [asciimoticon-web.herokuapp.com](asciimoticon-web.herokuapp.com)
+
 ## Nodejs Installation
 ```
 npm install asciimoticon-core --save
@@ -50,4 +52,4 @@ for (var faceName in faces) {
 
 ## Additional Links
 - [Available predefined faces](https://github.com/chrisrabe/asciimoticon-core/wiki)
-- [Contributor Code of Conduct](https://github.com/chrisrabe/asciimoticon-core/blob/master/.github/CODE_OF_CONDUCT.md)
+- [asciimoticon-core v-1.0 demo video](https://www.youtube.com/watch?v=q2XFvnmGceU)
