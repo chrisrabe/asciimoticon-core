@@ -3,6 +3,17 @@
 const expect = require('chai').expect;
 const facesModule = require('../app').faces;
 const partsModule = require('../app').parts;
+const themesModule = require('../app').themes;
+
+describe('themes module tests', () => {
+    it('should allow users to load themed faces', () => {
+        for (const theme in themesModule) {
+            const faces = themesModule[theme];
+            expect(faces).to.not.equal(null);
+        }
+    });
+});
+
 
 describe('faces module tests', () => {
     it('should allow users to load faces', () => {
