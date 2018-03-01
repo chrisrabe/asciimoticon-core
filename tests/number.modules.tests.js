@@ -31,6 +31,27 @@ describe('dice component tests', () => {
         const output = numberModule.dice(input);
         expect(output).to.equal(expected);
     });
+
+    it('should consider the text \' 1\' as a valid number', () => {
+        const input = ' 1';
+        const expected = '⚀';
+        const output = numberModule.dice(input);
+        expect(output).to.equal(expected);
+    });
+
+    it('should consider the text \'1 \' as a valid number', () => {
+        const input = '1 ';
+        const expected = '⚀';
+        const output = numberModule.dice(input);
+        expect(output).to.equal(expected);
+    });
+
+    it('should consider the text \' 1\' as a valid number', () => {
+        const input = ' 1 ';
+        const expected = '⚀';
+        const output = numberModule.dice(input);
+        expect(output).to.equal(expected);
+    });
 });
 
 
@@ -62,6 +83,27 @@ describe('dollar bill component tests', () => {
         const output = numberModule.dollarbill(input);
         expect(output).to.equal(expected);
     });
+
+    it('should consider the text \' 1\' as a valid number', () => {
+        const input = ' 1';
+        const expected = '[̲̅$̲̅(̲̅ι̅)̲̅$̲̅]';
+        const output = numberModule.dollarbill(input);
+        expect(output).to.equal(expected);
+    });
+
+    it('should consider the text \'1 \' as a valid number', () => {
+        const input = '1 ';
+        const expected = '[̲̅$̲̅(̲̅ι̅)̲̅$̲̅]';
+        const output = numberModule.dollarbill(input);
+        expect(output).to.equal(expected);
+    });
+
+    it('should consider the text \' 1\' as a valid number', () => {
+        const input = ' 1 ';
+        const expected = '[̲̅$̲̅(̲̅ι̅)̲̅$̲̅]';
+        const output = numberModule.dollarbill(input);
+        expect(output).to.equal(expected);
+    });
 });
 
 describe('loading component tests', () => {
@@ -89,6 +131,26 @@ describe('loading component tests', () => {
     it('should return null if input is not a number', () => {
         const input = 'text';
         const expected = null;
+        const output = numberModule.loading(input);
+        expect(output).to.equal(expected);
+    });
+    it('should consider the text \' 50\' as a valid number', () => {
+        const input = ' 50';
+        const expected = '█████▒▒▒▒▒';
+        const output = numberModule.loading(input);
+        expect(output).to.equal(expected);
+    });
+
+    it('should consider the text \'50 \' as a valid number', () => {
+        const input = '50 ';
+        const expected = '█████▒▒▒▒▒';
+        const output = numberModule.loading(input);
+        expect(output).to.equal(expected);
+    });
+
+    it('should consider the text \' 50 \' as a valid number', () => {
+        const input = ' 50 ';
+        const expected = '█████▒▒▒▒▒';
         const output = numberModule.loading(input);
         expect(output).to.equal(expected);
     });

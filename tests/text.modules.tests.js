@@ -5,9 +5,9 @@ const textModule = require('../app').text;
 
 describe('fliptext tests', () => {
     it('should flip text successfully', () => {
-        const input = 'abdefghijklmnopqrstuvwxyz';
+        const input = 'abcdefghijklmnopqrstuvwxyz';
         const output = textModule.toFliptext(input);
-        const expected = 'zʎxʍʌnʇsɹbdouɯןʞɾıɥƃɟǝpqɐ';
+        const expected = 'zʎxʍʌnʇsɹbdouɯןʞɾıɥƃɟǝpɔqɐ';
         expect(output).to.equal(expected);
     });
 
@@ -28,9 +28,9 @@ describe('fliptext tests', () => {
 
 describe('fancytext tests', () => {
     it('should convert text successfully', () => {
-        const input = 'abdefghijklmnopqrstuvwxyz';
+        const input = 'abcdefghijklmnopqrstuvwxyz';
         const output = textModule.toFancytext(input);
-        const expected = 'αв∂єƒgнιנкℓмησρqяѕтυνωχуz';
+        const expected = 'αв¢∂єƒgнιנкℓмησρqяѕтυνωχуz';
         expect(output).to.equal(expected);
     });
 
@@ -51,9 +51,9 @@ describe('fancytext tests', () => {
 
 describe('fliptexttable tests', () => {
     it('should convert text successfully', () => {
-        const input = 'abdefghijklmnopqrstuvwxyz';
+        const input = 'abcdefghijklmnopqrstuvwxyz';
         const output = textModule.toFliptextTable(input);
-        const expected = '(ノ ゜Д゜)ノ ︵  zʎxʍʌnʇsɹbdouɯןʞɾıɥƃɟǝpqɐ';
+        const expected = '(ノ ゜Д゜)ノ ︵  zʎxʍʌnʇsɹbdouɯןʞɾıɥƃɟǝpɔqɐ';
         expect(output).to.equal(expected);
     });
 
@@ -74,9 +74,9 @@ describe('fliptexttable tests', () => {
 
 describe('witchtext tests', () => {
     it('should convert text successfully', () => {
-        const input = 'abdefghijklmnopqrstuvwxyz';
+        const input = 'abcdefghijklmnopqrstuvwxyz';
         const output = textModule.toWitchtext(input);
-        const expected = 'ΛßÐΣŦGH|⅃ҠLMИӨþQЯ$†VVWXҰZ';
+        const expected = 'Λß¢ÐΣŦGH|⅃ҠLMИӨþQЯ$†VVWXҰZ';
         expect(output).to.equal(expected);
     });
 
@@ -97,9 +97,9 @@ describe('witchtext tests', () => {
 
 describe('arcanetext tests', () => {
     it('should convert text successfully', () => {
-        const input = 'abdefghijklmnopqrstuvwxyz';
+        const input = 'abcdefghijklmnopqrstuvwxyz';
         const output = textModule.toArcanetext(input);
-        const expected = 'ค๒๔єŦﻮђเןкl๓ภ๏קợгรtยשฬאץz';
+        const expected = 'ค๒ς๔єŦﻮђเןкl๓ภ๏קợгรtยשฬאץz';
         expect(output).to.equal(expected);
     });
 
@@ -120,9 +120,9 @@ describe('arcanetext tests', () => {
 
 describe('bubbletext tests', () => {
     it('should convert text successfully', () => {
-        const input = 'abdefghijklmnopqrstuvwxyz';
+        const input = 'abcdefghijklmnopqrstuvwxyz';
         const output = textModule.toBubbletext(input);
-        const expected = 'ⓐⓑⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ';
+        const expected = 'ⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩ';
         expect(output).to.equal(expected);
     });
 
@@ -143,9 +143,9 @@ describe('bubbletext tests', () => {
 
 describe('crazytext tests', () => {
     it('should convert text successfully', () => {
-        const input = 'abdefghijklmnopqrstuvwxyz';
+        const input = 'abcdefghijklmnopqrstuvwxyz';
         const output = textModule.toCrazytext(input);
-        const expected = 'ﾑ乃D乇ｷGんﾉﾌズﾚﾶ刀ӨｱQ尺丂ｲЦ√Щﾒﾘ乙';
+        const expected = 'ﾑ乃ᄃD乇ｷGんﾉﾌズﾚﾶ刀ӨｱQ尺丂ｲЦ√Щﾒﾘ乙';
         expect(output).to.equal(expected);
     });
 
