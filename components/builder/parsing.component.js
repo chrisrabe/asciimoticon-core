@@ -30,6 +30,6 @@ exports.parse = (text, lookup, options) => {
         if (dictItem) {
             if (typeof dictItem == 'function') return dictItem.apply(null, params);
             else return dictItem;
-        } else return termWithDelimiters;
+        } else return delimitedTerm;
     });
 };
