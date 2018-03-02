@@ -661,6 +661,10 @@ module.exports = {
         words: ['meh'],
         ascii: 'ಠ_ಠ'
     },
+    miniscule: {
+        words: ['miniscule', 'backward-S'],
+        ascii: 'Ƨ'
+    },
     mistyeyes: {
         words: ['mistyeyes'],
         ascii: 'ಡ_ಡ'
@@ -700,6 +704,10 @@ module.exports = {
     nuclear: {
         words: ['nuclear', 'radioactive', 'nukular'],
         ascii: '☢'
+    },
+    nwin: {
+        words: ['nwin'],
+        ascii: 'ᄂ'
     },
     nyan: {
         words: ['nyan'],
@@ -968,6 +976,10 @@ module.exports = {
     thanks: {
         words: ['thanks', 'thankyou', 'ty'],
         ascii: '\\(^-^)/'
+    },
+    theta: {
+        words: ['theta', 'angle'],
+        ascii: 'Ө'
     },
     therefore: {
         words: ['therefore', 'so'],
