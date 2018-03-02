@@ -8,7 +8,13 @@
 npm install asciimoticon-core --save
 ```
 
-## JS Usage
+## Full Documentation
+
+
+## Basic JS Usage
+
+**NOTE**: This snippet only covers the *basic* functionality of `asciimoticon-core`. Please visit our [documentation page](https://github.com/chrisrabe/asciimoticon-core/wiki/main_doc) to see the full list of functionalities.
+
 ```
 const core = require('asciimoticon-core');
 
@@ -50,4 +56,5 @@ for (var faceName in faces) {
 
 ## Additional Links
 - [Available predefined faces](https://github.com/chrisrabe/asciimoticon-core/wiki)
+- [Full Documentation](https://github.com/chrisrabe/asciimoticon-core/wiki/main_doc);
 - [Contributor Code of Conduct](https://github.com/chrisrabe/asciimoticon-core/blob/master/.github/CODE_OF_CONDUCT.md)
