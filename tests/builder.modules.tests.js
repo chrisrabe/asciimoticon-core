@@ -10,6 +10,13 @@ describe('build invalid input tests', () => {
         const output = builderModule.parse(input);
         expect(output).to.equal(expected);
     });
+
+    it('should return a blank string if input is null', () => {
+        const input = null;
+        const expected = '';
+        const output = builderModule.parse(input);
+        expect(output).to.equal(expected);
+    });
 });
 
 describe('builder options tests', () => {

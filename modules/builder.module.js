@@ -1,48 +1,57 @@
-const faces = require('./faces.module');
-const text = require('./text.module');
-const number = require('./number.module');
-
+const lookup = require('../components/builder/lookup.component');
 const parser = require('../components/builder/parsing.component');
+const template = require('../components/builder/template.component');
+const sequenceComp = require('../components/builder/sequence.component');
 
-exports.parse = (text, options) => {
-    const lookup = constructDictionary();
+/**
+ * Parses the text and assigns asciimoticons to values inside the defined
+ * prefix and suffix. If options is null, the default prefix and suffix are
+ * brackets.
+ *
+ * @param {*} text text which needs to be parsed
+ * @param {*} options prefix and suffix. default value = {prefix: '(', suffix: ')'}
+ * @param {*} template user defined mapping. assumes that it is the object returned by builder.template()
+ */
+exports.parse = (text, options, template) => {
+    let data = null;
+    if (template) {
+        if (template.content == null) {
+            throw new Error('Template needs to be the object returned by builder.template()');
+        }
+        data = lookup.build(template.content);
+    } else {
+        data = lookup.core();
+    }
     if (options) {
         // check if proper syntax
         if (!options.suffix || !options.prefix) {
             throw new Error('Invalid options');
         }
     }
-    return parser.parse(text, lookup, options);
+    return parser.parse(text, data, options);
 };
 
-function constructDictionary() {
-    const result = {};
-    addFaces(result);
-    addTextFunctions(result);
-    addNumberFunctions(result);
-    return result;
-}
-
-function addFaces(dictionary) {
-    for (const name in faces) {
-        const words = faces[name].words;
-        const ascii = faces[name].ascii;
-        for (let i = 0; i < words.length; i++) dictionary[words[i]] = ascii;
+/**
+ * Given a sequence, it replaces all values inside the sequence with
+ * the user defined template and then returns a string which contains
+ * the custom made asciimoticon.
+ *
+ * @param {*} sequence sequence of keys to create the asciimoticon. Must be an array
+ * @param {*} template user defined mapping. assumes that it is the object returned by builder.template()
+ */
+exports.build = (sequence, template) => {
+    if (!sequence || !template) {
+        return ''; //return empty string
     }
+    if (template.content == null) {
+        throw new Error('Template needs to be the object returned by builder.template()');
+    }
+    return sequenceComp.build(sequence, template.content);
 }
 
-function addTextFunctions(dictionary) {
-    dictionary['arcanetext'] = text.toArcanetext;
-    dictionary['bubbletext'] = text.toBubbletext;
-    dictionary['crazytext'] = text.toCrazytext;
-    dictionary['fancytext'] = text.toFancytext;
-    dictionary['fliptext'] = text.toFliptext;
-    dictionary['fliptabletext'] = text.toFliptextTable;
-    dictionary['witchtext'] = text.toWitchtext;
-}
-
-function addNumberFunctions(dictionary) {
-    dictionary['dice'] = number.dice;
-    dictionary['dollarbill'] = number.dollarbill;
-    dictionary['loadingbar'] = number.loading;
+/**
+ * Creates a new template object
+ */
+exports.template = () => {
+    return template.template();
 }

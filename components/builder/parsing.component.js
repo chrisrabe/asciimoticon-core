@@ -3,11 +3,14 @@
 /**
  * Replaces text with the values in the lookup parameter.
  *
- * @param {*} text the text which is needed to be parsed
- * @param {*} lookup a dictionary which maps text to asciimoticons
- * @param {*} options Options for custom {prefix, suffix} objects
+ * @param {string} text the text which is needed to be parsed
+ * @param {object} lookup a dictionary which maps text to asciimoticons
+ * @param {object} options Options for custom {prefix, suffix} objects
  */
 exports.parse = (text, lookup, options) => {
+    if (!text) {
+        return ''; // nothing
+    }
     "use strict";
 
     const o = options || {
