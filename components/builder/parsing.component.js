@@ -8,6 +8,9 @@
  * @param {object} options Options for custom {prefix, suffix} objects
  */
 exports.parse = (text, lookup, options) => {
+    if (!text) {
+        return ''; // nothing
+    }
     "use strict";
 
     const o = options || {
