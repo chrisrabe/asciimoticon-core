@@ -1,4 +1,3 @@
-/*jshint esversion:6*/
 
 exports.transpose = (str, table, backwards) => {
     var last,

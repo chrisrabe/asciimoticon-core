@@ -1,5 +1,3 @@
-/*jshint esversion:6*/
-
 /**
  * Replaces text with the values in the lookup parameter.
  *
@@ -18,8 +16,12 @@ exports.parse = (text, lookup, options) => {
         suffix: ')'
     };
 
+    o.prefix = escape(o.prefix);
+    o.suffix = escape(o.suffix);
+
     // regular expression to replace string surrounded by prefix and suffix
-    const regex = new RegExp("[" + o.prefix + "]([^" + o.suffix + "]*)[" + o.suffix + "]", "gim");
+    const regex = new RegExp(o.prefix + "([^" + o.suffix + "]*)" + o.suffix, "gim");
+    
     return text.replace(regex, (delimitedTerm, term) => {
         var params = null;
         if (term.indexOf(',') !== -1) {
@@ -36,3 +38,22 @@ exports.parse = (text, lookup, options) => {
         } else return delimitedTerm;
     });
 };
+
+/**
+ *  Escapes special characters for Regular Expressions
+ * 
+ * @param {*} text 
+ */
+function escape(text){
+    var invalid = ['*', '^', '\\', '$', '+', '?', '.', '(', ')', '[', ']', '{', '}', '|'];
+    var chars = [];
+    for(var i = 0; i < text.length; i++){
+        var c = text.charAt(i);
+        if(invalid.includes(c)){
+            chars.push(`\\${c}`);
+        } else {
+            chars.push(c);
+        }
+    }
+    return chars.join('');
+}

@@ -1,5 +1,3 @@
-/*jshint esversion:6*/
-
 /**
  * Given a sequence, it replaces all values inside the sequence with
  * the user defined template and then returns a string which contains
