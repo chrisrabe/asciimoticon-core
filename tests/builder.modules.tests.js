@@ -20,6 +20,34 @@ describe('build invalid input tests', () => {
 });
 
 describe('builder options tests', () => {
+    it('should allow multiple prefixes and suffixes', () => {
+        const options = {
+            prefix: '--',
+            suffix: '--'
+        };
+        const input = '--bear--';
+        const expected = 'ʕ·͡ᴥ·ʔ﻿';
+        const output = builderModule.parse(input, options);
+        expect(output).to.equal(expected);
+    });
+
+    it('should allow multiple prefixes and suffixes using Regex special characters', () => {
+        const special = ['*', '^', '\\', '$', '+', '?', '.', '(', ')', '[', ']', '{', '}', '|'];
+        const doTest = (symbol) => {
+            const options = {
+                prefix: `${symbol}${symbol}`,
+                suffix: `${symbol}${symbol}`
+            };
+            const input = `${symbol}${symbol}bear${symbol}${symbol}`;
+            const expected = 'ʕ·͡ᴥ·ʔ﻿';
+            const output = builderModule.parse(input, options);
+            expect(output).to.equal(expected);
+        };
+        for(var item of special){
+            doTest(item);
+        }
+    });
+
     it('should allow custom options', () => {
         const options = {
             prefix: ':',
