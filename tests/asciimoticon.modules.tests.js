@@ -1,5 +1,3 @@
-/*jshint esversion:6*/
-
 const expect = require('chai').expect;
 const facesModule = require('../app').faces;
 const partsModule = require('../app').parts;

@@ -1,4 +1,3 @@
-/*jshint esversion:6*/
 const service = require('../../services/text.service');
 
 const witchText = {

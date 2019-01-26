@@ -1,5 +1,3 @@
-/*jshint esversion:6*/
-
 exports.getAscii = (percent) => {
     if (percent == null || percent == '' || isNaN(percent)) {
         return null;
