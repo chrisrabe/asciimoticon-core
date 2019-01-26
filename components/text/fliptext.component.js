@@ -1,4 +1,4 @@
-const service = require('../../services/text.service');
+const service = require('../helper/text.component');
 
 const flipText = {
     a: '\u0250',
@@ -41,5 +41,5 @@ const flipText = {
 };
 
 exports.getAscii = (text) => {
-    return (text == null || text == '') ? null : service.transpose(text.toLowerCase(), flipText, true);
+    return (!text) ? null : service.transpose(text.toLowerCase(), flipText, true);
 };

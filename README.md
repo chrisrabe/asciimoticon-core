@@ -53,7 +53,7 @@ console.log(loading); // █▒▒▒▒▒▒▒▒▒
 
 const faces = core.faces;
 
-for (var faceName in faces) {
+for (const faceName in faces) {
     const face = faces[faceName];
     console.log(`${face.ascii} : ${face.words}`); // TOO MANY TO DEFINE
 }

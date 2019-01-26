@@ -22,6 +22,10 @@ class Template {
     }
 }
 
+/**
+ * Creates a new template
+ * @returns {Template}
+ */
 exports.template = () => {
     return new Template();
-}
+};

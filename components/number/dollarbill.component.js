@@ -1,6 +1,6 @@
-const service = require('../../services/text.service');
+const service = require('../helper/text.component');
 
-var table = {
+const table = {
     0: 'ο̲̅',
     1: '̅ι',
     2: '2̅',
@@ -13,9 +13,14 @@ var table = {
     9: '9̅',
 };
 
+/**
+ * Returns the dollar representation of the amount
+ * @param amount
+ * @returns {string|null}
+ */
 exports.getAscii = (amount) => {
     if (isNaN(amount)) {
         return null;
     }
-    return (amount == null || amount == '') ? null : '[̲̅$̲̅(̲' + service.transpose(amount.toString(), table) + '̅)̲̅$̲̅]'
+    return (!amount) ? null : '[̲̅$̲̅(̲' + service.transpose(amount.toString(), table) + '̅)̲̅$̲̅]'
 };

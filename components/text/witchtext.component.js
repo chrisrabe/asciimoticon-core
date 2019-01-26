@@ -1,4 +1,4 @@
-const service = require('../../services/text.service');
+const service = require('../helper/text.component');
 
 const witchText = {
     a: 'Λ',
@@ -30,5 +30,5 @@ const witchText = {
 };
 
 exports.getAscii = (text) => {
-    return (text == null || text == '') ? null : service.transpose(text.toLowerCase(), witchText);
+    return (!text) ? null : service.transpose(text.toLowerCase(), witchText);
 };
