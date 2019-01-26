@@ -41,7 +41,7 @@ describe('builder options tests', () => {
             const output = builderModule.parse(input, options);
             expect(output).to.equal(expected);
         };
-        for(var item of special){
+        for(const item of special){
             doTest(item);
         }
     });

@@ -1,4 +1,4 @@
-const service = require('../../services/text.service');
+const service = require('../helper/text.service');
 
 const witchText = {
     a: 'Λ',

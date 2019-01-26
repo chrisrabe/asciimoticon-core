@@ -1,6 +1,6 @@
-const service = require('../../services/text.service');
+const service = require('../helper/text.service');
 
-var table = {
+const table = {
     0: 'ο̲̅',
     1: '̅ι',
     2: '2̅',
@@ -17,5 +17,5 @@ exports.getAscii = (amount) => {
     if (isNaN(amount)) {
         return null;
     }
-    return (amount == null || amount == '') ? null : '[̲̅$̲̅(̲' + service.transpose(amount.toString(), table) + '̅)̲̅$̲̅]'
+    return (!amount) ? null : '[̲̅$̲̅(̲' + service.transpose(amount.toString(), table) + '̅)̲̅$̲̅]'
 };
