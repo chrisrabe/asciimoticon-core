@@ -1,3 +1,8 @@
+/**
+ * Returns an ascii representation of a progress bar.
+ * @param {number} percent
+ * @returns {string| null}
+ */
 exports.getAscii = (percent) => {
     if (!percent || isNaN(percent)) {
         return null;

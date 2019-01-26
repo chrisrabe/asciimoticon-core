@@ -1,6 +1,7 @@
 const faces = require('../../modules/faces.module');
 const text = require('../../modules/text.module');
 const number = require('../../modules/number.module');
+const symbols = require('../../modules/symbols.module');
 
 /**
  * Builds a lookup dictionary for all the valid key-value pairs.
@@ -18,21 +19,33 @@ exports.build = (userData) => {
         }
     }
     return core;
-}
+};
 
+/**
+ * Retrieves the core mappings from the asciimoticon-core API.
+ */
 exports.core = () => {
     const result = {};
     addFaces(result);
+    addSymbols(result);
     addTextFunctions(result);
     addNumberFunctions(result);
     return result;
-}
+};
 
 function addFaces(dictionary) {
     for (const name in faces) {
         const words = faces[name].words;
         const ascii = faces[name].ascii;
-        for (let i = 0; i < words.length; i++) dictionary[words[i]] = ascii;
+        words.forEach(word => dictionary[word] = ascii);
+    }
+}
+
+function addSymbols(dictionary) {
+    for (const name in symbols) {
+        const words = symbols[name].words;
+        const ascii = symbols[name].ascii;
+        words.forEach(word => dictionary[word] = ascii);
     }
 }
 

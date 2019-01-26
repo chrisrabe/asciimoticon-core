@@ -42,7 +42,7 @@ exports.parse = (text, lookup, options) => {
 /**
  *  Escapes special characters for Regular Expressions
  * 
- * @param {*} text 
+ * @param {string} text
  */
 function escape(text){
     const invalid = ['*', '^', '\\', '$', '+', '?', '.', '(', ')', '[', ']', '{', '}', '|'];

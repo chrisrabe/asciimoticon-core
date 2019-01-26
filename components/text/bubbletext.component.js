@@ -1,4 +1,4 @@
-const service = require('../helper/text.service');
+const service = require('../helper/text.component');
 
 const table = {
     a: 'ⓐ',

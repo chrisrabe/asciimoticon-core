@@ -1,4 +1,4 @@
-const service = require('../helper/text.service');
+const service = require('../helper/text.component');
 
 const table = {
     0: 'ο̲̅',
@@ -13,6 +13,11 @@ const table = {
     9: '9̅',
 };
 
+/**
+ * Returns the dollar representation of the amount
+ * @param amount
+ * @returns {string|null}
+ */
 exports.getAscii = (amount) => {
     if (isNaN(amount)) {
         return null;

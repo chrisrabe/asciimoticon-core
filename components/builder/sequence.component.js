@@ -3,8 +3,8 @@
  * the user defined template and then returns a string which contains
  * the custom made asciimoticon.
  *
- * @param {*} sequence
- * @param {*} template
+ * @param {Array} sequence
+ * @param {object} template
  */
 exports.build = (sequence, template) => {
     const result = [];
