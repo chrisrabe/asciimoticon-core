@@ -30,5 +30,5 @@ const witchText = {
 };
 
 exports.getAscii = (text) => {
-    return (text == null || text == '') ? null : service.transpose(text.toLowerCase(), witchText);
+    return (!text) ? null : service.transpose(text.toLowerCase(), witchText);
 };

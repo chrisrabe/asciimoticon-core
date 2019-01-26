@@ -30,5 +30,5 @@ const fancyText = {
 };
 
 exports.getAscii = (text) => {
-    return (text == null || text == '') ? null : service.transpose(text.toLowerCase(), fancyText);
+    return (!text) ? null : service.transpose(text.toLowerCase(), fancyText);
 };

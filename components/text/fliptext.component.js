@@ -41,5 +41,5 @@ const flipText = {
 };
 
 exports.getAscii = (text) => {
-    return (text == null || text == '') ? null : service.transpose(text.toLowerCase(), flipText, true);
+    return (!text) ? null : service.transpose(text.toLowerCase(), flipText, true);
 };
