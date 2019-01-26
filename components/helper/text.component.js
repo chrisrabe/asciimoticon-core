@@ -6,6 +6,10 @@
  * @returns {string}
  */
 exports.transpose = (str, table, backwards = undefined) => {
+    if(!str || !table) {
+        return str; // return original string
+    }
+
     function getChar(char) {
         const replacement = table[char];
         return replacement !== undefined ? replacement : char;

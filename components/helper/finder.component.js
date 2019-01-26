@@ -6,6 +6,9 @@ const symbols = require('../../modules/symbols.module');
  * @param {string} partial
  */
 exports.find = (partial) => {
+    if(!partial) {
+        return [];
+    }
     const facesArray = findFromModule(faces, partial);
     const symbolsArray = findFromModule(symbols, partial);
     return facesArray.concat(symbolsArray);
@@ -19,7 +22,7 @@ exports.find = (partial) => {
  */
 function findFromModule(module, partial) {
     const result = [];
-    for(const key in Object.keys(module)) {
+    for(const key in module) {
         const value = module[key];
         if(key.includes(partial)) {
             result.push(value.ascii);
