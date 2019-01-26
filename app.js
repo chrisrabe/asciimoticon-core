@@ -7,3 +7,4 @@ module.exports.parts = require('./modules/parts.module');
 module.exports.builder = require('./modules/builder.module');
 module.exports.themes = require('./modules/themes.module');
 module.exports.service = require('./modules/service.module');
+module.exports.symbols = require('./modules/symbols.module');

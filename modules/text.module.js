@@ -1,5 +1,3 @@
-/*jshint esversion:6*/
-
 // Module aggregates all text components into one module
 const fliptext = require('../components/text/fliptext.component');
 const fancytext = require('../components/text/fancytext.component');

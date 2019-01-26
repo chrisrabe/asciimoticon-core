@@ -1,5 +1,3 @@
-/*jshint esversion:6*/
-
 const expect = require('chai').expect;
 const builder = require('../app').builder;
 

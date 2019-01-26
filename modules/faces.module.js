@@ -1,5 +1,3 @@
-/*jshint esversion:6*/
-
 module.exports = {
     acid: {
         words: ['acid'],
@@ -49,14 +47,6 @@ module.exports = {
         words: ['bearhug'],
         ascii: 'ʕっ•ᴥ•ʔっ'
     },
-    because: {
-        words: ['because', 'since'],
-        ascii: '∵'
-    },
-    bigheart: {
-        words: ['bigheart'],
-        ascii: '❤'
-    },
     blackeye: {
         words: ['blackeye'],
         ascii: '0__#'
@@ -101,10 +91,6 @@ module.exports = {
         words: ['catlenny'],
         ascii: '( ͡° ᴥ ͡°)﻿'
     },
-    checkmark: {
-        words: ['check'],
-        ascii: '✓'
-    },
     chubby: {
         words: ['chubby'],
         ascii: '╭(ʘ̆~◞౪◟~ʘ̆)╮'
@@ -117,29 +103,13 @@ module.exports = {
         words: ['clique', 'gang', 'squad'],
         ascii: 'ヽ༼ ຈل͜ຈ༼ ▀̿̿Ĺ̯̿̿▀̿ ̿༽Ɵ͆ل͜Ɵ͆ ༽ﾉ'
     },
-    cloud: {
-        words: ['cloud'],
-        ascii: '☁'
-    },
-    club: {
-        words: ['club'],
-        ascii: '♣'
-    },
     coffee: {
         words: ['coffee', 'cuppa'],
         ascii: 'c[_]'
     },
-    command: {
-        words: ['cmd', 'command'],
-        ascii: '⌘'
-    },
     cool: {
         words: ['cool', 'csi'],
         ascii: '(•_•) ( •_•)>⌐■-■ (⌐■_■)'
-    },
-    copyright: {
-        words: ['copy', 'c'],
-        ascii: '©'
     },
     creep: {
         words: ['creep'],
@@ -153,10 +123,6 @@ module.exports = {
         words: ['crim3s'],
         ascii: '( ✜︵✜ )'
     },
-    cross: {
-        words: ['cross'],
-        ascii: '†'
-    },
     cry: {
         words: ['cry'],
         ascii: '(╥﹏╥)'
@@ -168,30 +134,6 @@ module.exports = {
     cute: {
         words: ['cute'],
         ascii: '(｡◕‿‿◕｡)'
-    },
-    d1: {
-        words: ['d1'],
-        ascii: '⚀'
-    },
-    d2: {
-        words: ['d2'],
-        ascii: '⚁'
-    },
-    d3: {
-        words: ['d3'],
-        ascii: '⚂'
-    },
-    d4: {
-        words: ['d4'],
-        ascii: '⚃'
-    },
-    d5: {
-        words: ['d5'],
-        ascii: '⚄'
-    },
-    d6: {
-        words: ['d6'],
-        ascii: '⚅'
     },
     damnyou: {
         words: ['damnyou'],
@@ -209,10 +151,6 @@ module.exports = {
         words: ['dealwithit', 'dwi'],
         ascii: '(⌐■_■)'
     },
-    delta: {
-        words: ['delta'],
-        ascii: 'Δ'
-    },
     depressed: {
         words: ['depressed'],
         ascii: '(︶︹︶)'
@@ -221,17 +159,9 @@ module.exports = {
         words: ['derp'],
         ascii: '☉ ‿ ⚆'
     },
-    diamond: {
-        words: ['diamond'],
-        ascii: '♦'
-    },
     dog: {
         words: ['dog'],
         ascii: '(◕ᴥ◕ʋ)'
-    },
-    dollar: {
-        words: ['dollar'],
-        ascii: '$'
     },
     dong: {
         words: ['dong'],
@@ -253,14 +183,6 @@ module.exports = {
         words: ['dope'],
         ascii: '<(^_^)>'
     },
-    doublequotesleft: {
-        words: ['<<'],
-        ascii: '«'
-    },
-    doublequotesright: {
-        words: ['>>'],
-        ascii: '»'
-    },
     doubleflat: {
         words: ['doubleflat'],
         ascii: '𝄫'
@@ -272,10 +194,6 @@ module.exports = {
     doubletableflip: {
         words: ['doubletableflip'],
         ascii: '┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻'
-    },
-    down: {
-        words: ['down'],
-        ascii: '↓'
     },
     duckface: {
         words: ['duckface'],
@@ -297,37 +215,9 @@ module.exports = {
         words: ['ebola'],
         ascii: 'ᴇʙᴏʟᴀ'
     },
-    ellipsis: {
-        words: ['ellipsis', '...'],
-        ascii: '…'
-    },
-    emdash: {
-        words: ['emdash', '--'],
-        ascii: '–'
-    },
-    emptystar: {
-        words: ['emptystar'],
-        ascii: '☆'
-    },
-    emptytriangle: {
-        words: ['emptytriangle', 't2'],
-        ascii: '△'
-    },
     endure: {
         words: ['endure'],
         ascii: '(҂◡_◡) ᕤ'
-    },
-    envelope: {
-        words: ['envelope', 'letter'],
-        ascii: '✉︎'
-    },
-    epsilon: {
-        words: ['epsilon'],
-        ascii: 'ɛ'
-    },
-    euro: {
-        words: ['euro'],
-        ascii: '€'
     },
     evil: {
         words: ['evil'],
@@ -365,18 +255,6 @@ module.exports = {
         words: ['fish'],
         ascii: '<"(((<3'
     },
-    five: {
-        words: ['5', 'five'],
-        ascii: '卌'
-    },
-    fiveeights: {
-        words: ['5/8'],
-        ascii: '⅝'
-    },
-    flat: {
-        words: ['flat', 'bemolle'],
-        ascii: '♭'
-    },
     flexing: {
         words: ['flexing'],
         ascii: 'ᕙ(`▽´)ᕗ'
@@ -388,10 +266,6 @@ module.exports = {
     flower: {
         words: ['flower', 'flor'],
         ascii: '(✿◠‿◠)'
-    },
-    flower2: {
-        words: ['f'],
-        ascii: '✿'
     },
     fly: {
         words: ['fly'],
@@ -465,25 +339,9 @@ module.exports = {
         words: ['greet', 'greetings'],
         ascii: '( ´◔ ω◔`) ノシ'
     },
-    gun: {
-        words: ['gun', 'mg'],
-        ascii: '︻╦╤─'
-    },
     hadouken: {
         words: ['hadouken'],
         ascii: '༼つಠ益ಠ༽つ ─=≡ΣO))'
-    },
-    hammerandsickle: {
-        words: ['hammerandsickle', 'hs'],
-        ascii: '☭'
-    },
-    handleft: {
-        words: ['handleft', 'hl'],
-        ascii: '☜'
-    },
-    handright: {
-        words: ['handright', 'hr'],
-        ascii: '☞'
     },
     haha: {
         words: ['haha'],
@@ -496,10 +354,6 @@ module.exports = {
     happygarry: {
         words: ['happygarry'],
         ascii: 'ᕕ( ᐛ )ᕗ'
-    },
-    heart: {
-        words: ['h', 'heart'],
-        ascii: '♥'
     },
     hello: {
         words: ['hello', 'ohai', 'bye'],
@@ -525,25 +379,13 @@ module.exports = {
         words: ['illuminati'],
         ascii: '୧(▲ᴗ▲)ノ'
     },
-    infinity: {
-        words: ['infinity', 'inf'],
-        ascii: '∞'
-    },
     inlove: {
         words: ['inlove'],
         ascii: '(っ´ω`c)♡'
     },
-    integral: {
-        words: ['int'],
-        ascii: '∫'
-    },
     internet: {
         words: ['internet'],
         ascii: 'ଘ(੭*ˊᵕˋ)੭* ̀ˋ ɪɴᴛᴇʀɴᴇᴛ'
-    },
-    interrobang: {
-        words: ['interrobang'],
-        ascii: '‽'
     },
     jake: {
         words: ['jake'],
@@ -569,17 +411,9 @@ module.exports = {
         words: ['kyubey'],
         ascii: '／人◕ ‿‿ ◕人＼'
     },
-    lambda: {
-        words: ['lambda'],
-        ascii: 'λ'
-    },
     lazy: {
         words: ['lazy'],
         ascii: '_(:3」∠)_'
-    },
-    left: {
-        words: ['left', '<-'],
-        ascii: '←'
     },
     lenny: {
         words: ['lenny'],
@@ -661,10 +495,6 @@ module.exports = {
         words: ['meh'],
         ascii: 'ಠ_ಠ'
     },
-    miniscule: {
-        words: ['miniscule', 'backward-S'],
-        ascii: 'Ƨ'
-    },
     mistyeyes: {
         words: ['mistyeyes'],
         ascii: 'ಡ_ಡ'
@@ -672,10 +502,6 @@ module.exports = {
     monster: {
         words: ['monster'],
         ascii: '༼ ༎ຶ ෴ ༎ຶ༽'
-    },
-    natural: {
-        words: ['natural'],
-        ascii: '♮'
     },
     needle: {
         words: ['needle', 'inject'],
@@ -697,18 +523,6 @@ module.exports = {
         words: ['nom', 'yummy', 'delicious'],
         ascii: '(っˆڡˆς)'
     },
-    note: {
-        words: ['note', 'sing'],
-        ascii: '♫'
-    },
-    nuclear: {
-        words: ['nuclear', 'radioactive', 'nukular'],
-        ascii: '☢'
-    },
-    nwin: {
-        words: ['nwin'],
-        ascii: 'ᄂ'
-    },
     nyan: {
         words: ['nyan'],
         ascii: '~=[,,_,,]:3'
@@ -725,26 +539,6 @@ module.exports = {
         words: ['omg'],
         ascii: '◕_◕'
     },
-    oneeighth: {
-        words: ['1/8'],
-        ascii: '⅛'
-    },
-    onefourth: {
-        words: ['1/4'],
-        ascii: '¼'
-    },
-    onehalf: {
-        words: ['1/2'],
-        ascii: '½'
-    },
-    onethird: {
-        words: ['1/3'],
-        ascii: '⅓'
-    },
-    option: {
-        words: ['opt', 'option'],
-        ascii: '⌥'
-    },
     ohreally: {
         words: ['orly'],
         ascii: '(눈_눈)'
@@ -760,10 +554,6 @@ module.exports = {
     pear: {
         words: ['pear'],
         ascii: '(__>-'
-    },
-    pi: {
-        words: ['pi'],
-        ascii: 'π'
     },
     pingpong: {
         words: ['pingpong'],
@@ -789,10 +579,6 @@ module.exports = {
         words: ['porcupine'],
         ascii: '(•ᴥ• )́`́\'́`́\'́⻍'
     },
-    pound: {
-        words: ['pound'],
-        ascii: '£'
-    },
     praise: {
         words: ['praise'],
         ascii: '(☝ ՞ਊ ՞)☝'
@@ -817,14 +603,6 @@ module.exports = {
         words: ['really'],
         ascii: 'ò_ô'
     },
-    registered: {
-        words: ['r'],
-        ascii: '®'
-    },
-    right: {
-        words: ['right', '->'],
-        ascii: '→'
-    },
     riot: {
         words: ['riot'],
         ascii: '୧༼ಠ益ಠ༽୨'
@@ -832,10 +610,6 @@ module.exports = {
     rolleyes: {
         words: ['rolleyes'],
         ascii: '(◔_◔)'
-    },
-    rose: {
-        words: ['rose'],
-        ascii: '✿ڿڰۣ—'
     },
     run: {
         words: ['run'],
@@ -853,14 +627,6 @@ module.exports = {
         words: ['sadlenny'],
         ascii: '( ͡° ʖ̯ ͡°)'
     },
-    seveneigths: {
-        words: ['7/8'],
-        ascii: '⅞'
-    },
-    sharp: {
-        words: ['sharp', 'diesis'],
-        ascii: '♯'
-    },
     shout: {
         words: ['shout'],
         ascii: '╚(•⌂•)╝'
@@ -873,49 +639,21 @@ module.exports = {
         words: ['shy'],
         ascii: '=^_^='
     },
-    sigma: {
-        words: ['sigma', 'sum'],
-        ascii: 'Σ'
-    },
-    skull: {
-        words: ['skull'],
-        ascii: '☠'
-    },
     smile: {
         words: ['smile'],
         ascii: 'ツ'
-    },
-    smiley: {
-        words: ['smiley'],
-        ascii: '☺︎'
     },
     smirk: {
         words: ['smirk'],
         ascii: '¬‿¬'
     },
-    snowman: {
-        words: ['snowman'],
-        ascii: '☃'
-    },
     sob: {
         words: ['sob'],
         ascii: '(;´༎ຶД༎ຶ`)'
     },
-    spade: {
-        words: ['spade'],
-        ascii: '♠'
-    },
-    squareroot: {
-        words: ['sqrt'],
-        ascii: '√'
-    },
     squid: {
         words: ['squid'],
         ascii: '<コ:彡'
-    },
-    star: {
-        words: ['star'],
-        ascii: '★'
     },
     strong: {
         words: ['strong'],
@@ -924,14 +662,6 @@ module.exports = {
     suicide: {
         words: ['suicide'],
         ascii: 'ε/̵͇̿̿/’̿’̿ ̿(◡︵◡)'
-    },
-    sum: {
-        words: ['sum'],
-        ascii: '∑'
-    },
-    sun: {
-        words: ['sun'],
-        ascii: '☀'
     },
     surprised: {
         words: ['surprised'],
@@ -949,10 +679,6 @@ module.exports = {
         words: ['swag'],
         ascii: '(̿▀̿‿ ̿▀̿ ̿)'
     },
-    sword: {
-        words: ['sword'],
-        ascii: 'o()xxxx[{::::::::::::::::::>'
-    },
     tabledown: {
         words: ['tabledown'],
         ascii: '┬─┬﻿ ノ( ゜-゜ノ)'
@@ -960,10 +686,6 @@ module.exports = {
     tableflip: {
         words: ['tableflip'],
         ascii: '(ノ ゜Д゜)ノ ︵ ┻━┻'
-    },
-    tau: {
-        words: ['tau'],
-        ascii: 'τ'
     },
     tears: {
         words: ['tears'],
@@ -976,18 +698,6 @@ module.exports = {
     thanks: {
         words: ['thanks', 'thankyou', 'ty'],
         ascii: '\\(^-^)/'
-    },
-    theta: {
-        words: ['theta', 'angle'],
-        ascii: 'Ө'
-    },
-    therefore: {
-        words: ['therefore', 'so'],
-        ascii: '⸫'
-    },
-    threeeights: {
-        words: ['3/8'],
-        ascii: '⅜'
     },
     tiefighter: {
         words: ['tiefighter'],
@@ -1005,25 +715,13 @@ module.exports = {
         words: ['toogood'],
         ascii: 'ᕦ(òᴥó)ᕥ'
     },
-    trademark: {
-        words: ['tm'],
-        ascii: '™'
-    },
     triangle: {
         words: ['triangle', 't'],
         ascii: '▲'
     },
-    twothirds: {
-        words: ['2/3'],
-        ascii: '⅔'
-    },
     unflip: {
         words: ['unflip'],
         ascii: '┬──┬ ノ(ò_óノ)'
-    },
-    up: {
-        words: ['up'],
-        ascii: '↑'
     },
     victory: {
         words: ['victory'],
@@ -1072,14 +770,6 @@ module.exports = {
     yeah: {
         words: ['yeah', 'yes'],
         ascii: '(•̀ᴗ•́)و ̑̑'
-    },
-    yen: {
-        words: ['yen'],
-        ascii: '¥'
-    },
-    yinyang: {
-        words: ['yinyang', 'yy'],
-        ascii: '☯'
     },
     yolo: {
         words: ['yolo'],
