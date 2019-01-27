@@ -1,5 +1,4 @@
-/*jshint esversion:6*/
-const service = require('../../services/text.service');
+const service = require('../helper/text.component');
 
 const fancyText = {
     a: 'α',
@@ -31,5 +30,5 @@ const fancyText = {
 };
 
 exports.getAscii = (text) => {
-    return (text == null || text == '') ? null : service.transpose(text.toLowerCase(), fancyText);
+    return (!text) ? null : service.transpose(text.toLowerCase(), fancyText);
 };

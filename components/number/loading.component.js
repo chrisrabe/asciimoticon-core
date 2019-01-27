@@ -1,14 +1,16 @@
-/*jshint esversion:6*/
-
+/**
+ * Returns an ascii representation of a progress bar.
+ * @param {number} percent
+ * @returns {string| null}
+ */
 exports.getAscii = (percent) => {
-    if (percent == null || percent == '' || isNaN(percent)) {
+    if (!percent || isNaN(percent)) {
         return null;
     }
-    var filledBlocks = Math.round(percent / 10) <= 10 ? Math.round(percent / 10) : 10,
-        emptyBlocks = 10 - filledBlocks,
-        str = '',
-        i;
-    for (i = 0; i < filledBlocks; i++) str += '█';
-    for (i = 0; i < emptyBlocks; i++) str += '▒';
+    const filledBlocks = Math.round(percent / 10) <= 10 ? Math.round(percent / 10) : 10;
+    let emptyBlocks = 10 - filledBlocks;
+    let str = '';
+    for (let i = 0; i < filledBlocks; i++) str += '█';
+    for (let i = 0; i < emptyBlocks; i++) str += '▒';
     return str;
 };

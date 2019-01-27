@@ -1,9 +1,9 @@
-/*jshint esversion:6*/
-
 const expect = require('chai').expect;
-const facesModule = require('../app').faces;
-const partsModule = require('../app').parts;
-const themesModule = require('../app').themes;
+const app = require('../app');
+const facesModule = app.faces;
+const partsModule = app.parts;
+const themesModule = app.themes;
+const symbolsModule = app.symbols;
 
 describe('themes module tests', () => {
     it('should allow users to load themed faces', () => {
@@ -13,7 +13,6 @@ describe('themes module tests', () => {
         }
     });
 });
-
 
 describe('faces module tests', () => {
     it('should allow users to load faces', () => {
@@ -26,6 +25,19 @@ describe('faces module tests', () => {
             expect(words).to.not.equal(null);
         }
     });
+});
+
+describe('symbols module tests', () => {
+    it('should allow users to load symbols', () => {
+        for(const symbID in symbolsModule) {
+            const symbol = symbolsModule[symbID];
+            const ascii = symbol.ascii;
+            const words = symbol.words;
+            expect(symbol).to.not.equal(null);
+            expect(ascii).to.not.equal(null);
+            expect(words).to.not.equal(null);
+        }
+    })
 });
 
 describe('parts module tests', () => {

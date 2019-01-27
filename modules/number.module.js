@@ -1,5 +1,3 @@
-/*jshint esversion:6*/
-
 // Aggregates all number related components into a single module
 const dice = require('../components/number/dice.component');
 const dollarbill = require('../components/number/dollarbill.component');

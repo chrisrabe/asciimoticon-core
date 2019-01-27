@@ -1,0 +1,14 @@
+language: node_js
+
+node_js:
+  - "8"
+  - "9"
+  - "10"
+  - "11"
+
+before_script:
+  - npm install
+
+script:
+  - istanbul cover ./node_modules/mocha/bin/_mocha --recursive tests --reporter lcovonly
+  - codecov

@@ -1,25 +1,30 @@
-# asciimoticon-core : Getting Started
+# asciimoticon-core: Getting Started
 **Author**: [Chris Rabe](https://github.com/chrisrabe)
 
-**Nodejs**: https://www.npmjs.com/package/asciimoticon-core
-
-**Trello**: https://trello.com/rabestudios
-
 **asciimoticon-web**: [asciimoticon-web.herokuapp.com](https://asciimoticon-web.herokuapp.com)
+
+[![Build Status](https://travis-ci.org/chrisrabe/asciimoticon-core.svg?branch=master)](https://travis-ci.org/chrisrabe/asciimoticon-core)
+![](https://img.shields.io/codecov/c/github/chrisrabe/asciimoticon-core.svg)
+![](https://img.shields.io/github/license/chrisrabe/asciimoticon-core.svg)
 
 ## Nodejs Installation
 ```
 npm install asciimoticon-core --save
 ```
 
+## Demo Videos
+
+- [asciimoticon-core v-1.1 demo video](https://www.youtube.com/watch?v=X6qywKP9d4c)
+- [asciimoticon-core v-1.0 demo video](https://www.youtube.com/watch?v=q2XFvnmGceU)
+
 ## Full Documentation
 
+Please visit our [documentation page](https://github.com/chrisrabe/asciimoticon-core/wiki/main_doc) to see the full list of functionalities.
 
 ## Basic JS Usage
 
 **NOTE**: This snippet only covers the *basic* functionality of `asciimoticon-core`. 
 
-Please visit our [documentation page](https://github.com/chrisrabe/asciimoticon-core/wiki/main_doc) to see the full list of functionalities.
 
 ```
 const core = require('asciimoticon-core');
@@ -53,7 +58,7 @@ console.log(loading); // █▒▒▒▒▒▒▒▒▒
 
 const faces = core.faces;
 
-for (var faceName in faces) {
+for (const faceName in faces) {
     const face = faces[faceName];
     console.log(`${face.ascii} : ${face.words}`); // TOO MANY TO DEFINE
 }
@@ -63,5 +68,3 @@ for (var faceName in faces) {
 ## Additional Links
 - [Available predefined faces](https://github.com/chrisrabe/asciimoticon-core/wiki)
 - [Full Documentation](https://github.com/chrisrabe/asciimoticon-core/wiki/main_doc)
-- [asciimoticon-core v-1.1 demo video](https://www.youtube.com/watch?v=X6qywKP9d4c)
-- [asciimoticon-core v-1.0 demo video](https://www.youtube.com/watch?v=q2XFvnmGceU)
