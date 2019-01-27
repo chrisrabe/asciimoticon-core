@@ -38,10 +38,10 @@ class Template {
      */
     merge(templates) {
         if(!templates) {
-            throw new Error('Argument is null');
+            throw new Error('Argument is null.');
         }
         if(!Array.isArray(templates)) {
-            throw new Error('Argument must be an array');
+            throw new Error('Argument is not an array.');
         }
         if(templates.length) {
             const newTemplate = new Template();

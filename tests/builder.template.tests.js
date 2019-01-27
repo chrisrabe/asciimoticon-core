@@ -225,6 +225,22 @@ describe('template merge logic tests', () => {
            expect(output.content[key]).equal(expected[key]);
        });
    });
+
+   it('should throw an error if input is null', () => {
+      const template = builder.template();
+      const expected = 'Argument is null.';
+      const input = null;
+      const output = template.merge;
+      expect(output.bind(output, input)).to.throw(expected);
+   });
+
+   it('should throw an error if input is not an array', () => {
+       const template = builder.template();
+       const expected = 'Argument is not an array.';
+       const input = 'not an array';
+       const output = template.merge;
+       expect(output.bind(output, input)).to.throw(expected);
+   });
 });
 
 describe('template to parser tests', () => {
@@ -284,6 +300,23 @@ describe('template to parser tests', () => {
         const input = '(custom)';
         const output = builder.parse(input, null, template);
         const expected = '(o____O)';
+        expect(output).to.equal(expected);
+    });
+
+    it('should allow the usage of text template', () => {
+        const buildReverseTable = () => {
+            const table = {};
+            const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+            for(let i = 0; i < alphabet.length; i++) {
+                table[alphabet.charAt(i)] = alphabet.charAt(alphabet.length - i - 1);
+            }
+            return table;
+        };
+        const table = buildReverseTable();
+        const textTemplate = builder.textTemplate('reverse', table);
+        const input = '(reverse,abc)';
+        const expected = 'zyx';
+        const output = builder.parse(input, null, textTemplate);
         expect(output).to.equal(expected);
     });
 });
