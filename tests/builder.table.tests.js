@@ -65,3 +65,41 @@ describe('reversed table tests' , () => {
       });
    });
 });
+
+describe('binary table tests', () => {
+   it('should create a table that maps characters to binary', () => {
+        const input = 'a';
+        const output = builder.createBinaryTable(input);
+        const expected = { a: '1100001', A: '1000001' };
+        expect(output).to.not.equal(null);
+        expect(Object.keys(output).length).to.equal(Object.keys(expected).length);
+        Object.keys(output).forEach(key => {
+           expect(output[key]).to.equal(expected[key]);
+        });
+   });
+
+   it('should throw an error if null input is passed', () => {
+        const input = null;
+        const output = builder.createBinaryTable;
+        const expected = 'Argument is null.';
+        expect(output.bind(output, input)).to.throw(expected);
+   });
+
+   it('should throw an error if non-alphanumeric string is passed', () => {
+        const input = '+.-/';
+        const output = builder.createBinaryTable;
+        const expected = 'Argument is not alphanumeric.';
+        expect(output.bind(output, input)).to.throw(expected);
+   });
+
+   it('should return a table with no duplicates', () => {
+       const input = 'aaaaaa';
+       const output = builder.createBinaryTable(input);
+       const expected = { a: '1100001', A: '1000001' };
+       expect(output).to.not.equal(null);
+       expect(Object.keys(output).length).to.equal(Object.keys(expected).length);
+       Object.keys(output).forEach(key => {
+           expect(output[key]).to.equal(expected[key]);
+       });
+   });
+});
