@@ -3,7 +3,8 @@
 
 **asciimoticon-web**: [asciimoticon-web.herokuapp.com](https://asciimoticon-web.herokuapp.com)
 
-[![Build Status](https://travis-ci.org/chrisrabe/asciimoticon-core.svg?branch=release-v.1.2)](https://travis-ci.org/chrisrabe/asciimoticon-core)
+[![Build Status](https://travis-ci.org/chrisrabe/asciimoticon-core.svg?branch=master)](https://travis-ci.org/chrisrabe/asciimoticon-core)
+![](https://img.shields.io/codecov/c/github/chrisrabe/asciimoticon-core.svg)
 ![](https://img.shields.io/github/license/chrisrabe/asciimoticon-core.svg)
 
 ## Nodejs Installation
