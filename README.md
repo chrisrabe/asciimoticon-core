@@ -1,9 +1,7 @@
 # asciimoticon-core : Getting Started
 **Author**: [Chris Rabe](https://github.com/chrisrabe)
 
-**Nodejs**: https://www.npmjs.com/package/asciimoticon-core
-
-**Trello**: https://trello.com/rabestudios
+**NPM Registry**: https://www.npmjs.com/package/asciimoticon-core
 
 **asciimoticon-web**: [asciimoticon-web.herokuapp.com](https://asciimoticon-web.herokuapp.com)
 
@@ -12,14 +10,19 @@
 npm install asciimoticon-core --save
 ```
 
+## Demo Videos
+
+- [asciimoticon-core v-1.1 demo video](https://www.youtube.com/watch?v=X6qywKP9d4c)
+- [asciimoticon-core v-1.0 demo video](https://www.youtube.com/watch?v=q2XFvnmGceU)
+
 ## Full Documentation
 
+Please visit our [documentation page](https://github.com/chrisrabe/asciimoticon-core/wiki/main_doc) to see the full list of functionalities.
 
 ## Basic JS Usage
 
 **NOTE**: This snippet only covers the *basic* functionality of `asciimoticon-core`. 
 
-Please visit our [documentation page](https://github.com/chrisrabe/asciimoticon-core/wiki/main_doc) to see the full list of functionalities.
 
 ```
 const core = require('asciimoticon-core');
@@ -63,5 +66,3 @@ for (const faceName in faces) {
 ## Additional Links
 - [Available predefined faces](https://github.com/chrisrabe/asciimoticon-core/wiki)
 - [Full Documentation](https://github.com/chrisrabe/asciimoticon-core/wiki/main_doc)
-- [asciimoticon-core v-1.1 demo video](https://www.youtube.com/watch?v=X6qywKP9d4c)
-- [asciimoticon-core v-1.0 demo video](https://www.youtube.com/watch?v=q2XFvnmGceU)
