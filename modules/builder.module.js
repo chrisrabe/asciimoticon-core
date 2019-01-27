@@ -2,6 +2,7 @@ const lookup = require('../components/builder/lookup.component');
 const parser = require('../components/builder/parsing.component');
 const template = require('../components/builder/template.component');
 const sequenceComp = require('../components/builder/sequence.component');
+const textTemplate = require('../components/builder/text.template.component');
 
 /**
  * Parses the text and assigns asciimoticons to values inside the defined
@@ -47,11 +48,14 @@ exports.build = (sequence, template) => {
         throw new Error('Template needs to be the object returned by builder.template()');
     }
     return sequenceComp.build(sequence, template.content);
-}
+};
 
 /**
  * Creates a new template object
  */
-exports.template = () => {
-    return template.template();
-}
+exports.template = template.template;
+
+/**
+ * Creates a new text template
+ */
+exports.textTemplate = textTemplate.textTemplate;
