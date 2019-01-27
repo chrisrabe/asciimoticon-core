@@ -1,9 +1,10 @@
-# asciimoticon-core : Getting Started
+# asciimoticon-core: Getting Started
 **Author**: [Chris Rabe](https://github.com/chrisrabe)
 
-**NPM Registry**: https://www.npmjs.com/package/asciimoticon-core
-
 **asciimoticon-web**: [asciimoticon-web.herokuapp.com](https://asciimoticon-web.herokuapp.com)
+
+[![Build Status](https://travis-ci.org/chrisrabe/asciimoticon-core.svg?branch=release-v.1.2)](https://travis-ci.org/chrisrabe/asciimoticon-core)
+![](https://img.shields.io/github/license/chrisrabe/asciimoticon-core.svg)
 
 ## Nodejs Installation
 ```
