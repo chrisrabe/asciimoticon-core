@@ -44,15 +44,18 @@ class Template {
             throw new Error('Argument must be an array');
         }
         if(templates.length) {
+            const newTemplate = new Template();
+            newTemplate.content = Object.create(this.content);
             templates.forEach(template => {
                 for(const key in template.content) {
                     if(template.content.hasOwnProperty(key)) {
-                        if(!Object.keys(this.content).includes(key)) {
-                            this.content[key] = template.content[key];
+                        if(!Object.keys(newTemplate.content).includes(key)) {
+                            newTemplate.content[key] = template.content[key];
                         }
                     }
                 }
             });
+            return newTemplate;
         }
         return this;
     }
