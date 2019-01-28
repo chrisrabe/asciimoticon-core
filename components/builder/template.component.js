@@ -45,7 +45,7 @@ class Template {
         }
         if(templates.length) {
             const newTemplate = new Template();
-            newTemplate.content = Object.create(this.content);
+            newTemplate.content = {...this.content};
             templates.forEach(template => {
                 for(const key in template.content) {
                     if(template.content.hasOwnProperty(key)) {
