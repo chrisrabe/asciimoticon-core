@@ -14,6 +14,7 @@ npm install asciimoticon-core --save
 
 ## Demo Videos
 
+- [asciimoticon-core v-1.2 demo video](https://youtu.be/U0-tg_ZC-9k)
 - [asciimoticon-core v-1.1 demo video](https://www.youtube.com/watch?v=X6qywKP9d4c)
 - [asciimoticon-core v-1.0 demo video](https://www.youtube.com/watch?v=q2XFvnmGceU)
 
